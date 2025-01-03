@@ -1,13 +1,13 @@
 {
     "builds": [{
-      "src": "alphabloczs/wsgi.py",
+      "src": "alphabloczs/alphabloczs/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.10.11" }
     }],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "alphabloczs/wsgi.py"
+        "dest": "alphabloczs/alphabloczs/wsgi.py"
       }
     ]
 }
